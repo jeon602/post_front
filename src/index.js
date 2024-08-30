@@ -1,20 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
-import * as PropTypes from "prop-types";
-
+import { ChakraProvider } from "@chakra-ui/react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-function CkakraProvider(props) {
-  return null;
-}
-
-CkakraProvider.propTypes = { children: PropTypes.node };
 root.render(
   <React.StrictMode>
-    <CkakraProvider>
+    <ChakraProvider>
       <App />
-    </CkakraProvider>
+    </ChakraProvider>
   </React.StrictMode>,
 );
